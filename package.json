@@ -1,0 +1,37 @@
+{
+  "name": "apollo-fileupload",
+  "version": "1.0.0",
+  "description": "Apollo/serverv4 file upload ",
+  "main": "server.ts",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "node dist/server.js",
+    "start:dev": "nodemon --exec ts-node --type-check src/server.ts",
+    "start:watch": "nodemon --ignore dist/server.js"
+  },
+  "author": "Swastik Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.0",
+    "@apollo/subgraph": "^2.4.2",
+    "@types/graphql-upload": "^8.0.12",
+    "@types/shortid": "^0.0.29",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-upload": "^12.0.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/node": "^18.16.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

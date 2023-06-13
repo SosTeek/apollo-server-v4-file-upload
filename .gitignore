@@ -1,0 +1,10 @@
+node_modules
+dist
+logs
+.env
+.env.docker
+.yarnrc.yml
+.yarn
+*lock.json
+.vscode
+uploads
